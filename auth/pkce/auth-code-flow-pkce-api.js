@@ -18,6 +18,7 @@ function getAccessToken(settings){
                 log("Redirecting to AdSTS...");
             }).catch((err) => {
                 log(err);
+                fail(new Error("Redirecting to AdSTS failed!:" + err));
             });
         }
     });
