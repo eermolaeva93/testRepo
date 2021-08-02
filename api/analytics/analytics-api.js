@@ -30,7 +30,7 @@ function getDetailedCalls(dateFrom, dateTo, timezone, sortColumn, descending, of
 }
 
 function getUserCalls(userIds, dateFrom, dateTo, accountId, timezone){ 
-    let url = `${baseUrl}/analytics/calls/user?dateFrom=${new Date(dateFrom).toISOString()}&dateTo=${new Date(dateTo).toISOString()}`;
+    let url = `${baseUrl}/analytics/calls/user?dateFrom=${dateFrom}&dateTo=${dateTo}`;
     let params = '';
     userIds = userIds.split(",");
     const body = {
