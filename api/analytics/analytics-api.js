@@ -1,4 +1,4 @@
-let baseUrl = 'https://api.intermedia.net';
+const baseUrl = 'https://api.intermedia.net';
 
 
 function getDetailedCalls(dateFrom, dateTo, timezone, sortColumn, descending, offset, size, accountId, body){
@@ -33,7 +33,7 @@ function getUserCalls(userIds, dateFrom, dateTo, accountId, timezone){
     let url = `${baseUrl}/analytics/calls/user?dateFrom=${new Date(dateFrom).toISOString()}&dateTo=${new Date(dateTo).toISOString()}`;
     let params = '';
     userIds = userIds.split(",");
-    let body = {
+    const body = {
         "userIds": userIds
     }
 

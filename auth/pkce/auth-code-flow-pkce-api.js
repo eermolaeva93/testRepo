@@ -1,6 +1,6 @@
 function getAccessToken(settings){
     return new Promise((succeed, fail) => {
-        let mgr = new Oidc.UserManager(settings);
+        const mgr = new Oidc.UserManager(settings);
 
         //check for token in URL
         if (location.search.includes("code=", 1)) {
