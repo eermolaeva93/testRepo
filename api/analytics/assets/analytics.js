@@ -1,11 +1,10 @@
 ///////////////////////////////
-// IIFE on load
+// on load
 ///////////////////////////////
-(()=>{
-    if(!isAuthorized()){
-        window.location.href = "../../../auth/s2s/auth.html"
-    }
-})();
+if(!isAuthorized()){
+    window.location.href = "../../../auth/s2s/auth.html"
+}
+
 
 //////////////////////////////
 // UI event handlers
