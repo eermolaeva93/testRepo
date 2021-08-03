@@ -55,8 +55,9 @@ function onGetDetailedCalls(){
 function onGetUserCalls(){
     const dateFrom = new Date(document.getElementById('dateFromUserCalls').value).toISOString();
     const dateTo = new Date(document.getElementById('dateToUserCalls').value).toISOString();
+    const userIds = (document.getElementById('userIds').value).split(",");
     getUserCalls(
-        document.getElementById('userIds').value,
+        userIds,
         dateFrom,
         dateTo,
         document.getElementById('getUserCallsTimezone').value,

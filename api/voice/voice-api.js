@@ -18,6 +18,7 @@ function createHubSubscription(events = ["*"], ttl = "00:30:00"){
 ///////////////////////////////
 function getDevices(){
     const url = `${baseUrl}/voice/v2/devices`;
+    
     return makeRequest("GET", url).then((response) => response.json());
 }
 
