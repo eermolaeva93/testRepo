@@ -1,11 +1,10 @@
 ///////////////////////////////
-// IIFE on load 
+// on load 
 ///////////////////////////////
-(()=>{
-    if(isAuthorized()){
-        window.location.href = "api-menu.html";
-    }
-})();
+if(isAuthorized()){
+    window.location.href = "api-menu.html";
+}
+
 ///////////////////////////////
 // UI event handlers
 ///////////////////////////////
